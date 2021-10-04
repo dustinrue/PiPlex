@@ -28,7 +28,7 @@ You will also need to create a `flac` directory in the Music directory so abcde 
 
 ### Configuring Plex Media Server
 
-Visit [http://piplex.local:32400](http://piplex.local:32400) to configure Plex Media Server. Sign into your account and then create a new library for Music. You can browse to the pre-existing directory at /plex-data or use any externally mounted directory you created.
+Visit [http://piplex.local:32400/web](http://piplex.local:32400/web) to configure Plex Media Server. Sign into your account and then create a new library for Music. You can browse to the pre-existing directory at /plex-data or use any externally mounted directory you created.
 
 ### Configuring Samba
 
@@ -38,7 +38,7 @@ The default username/password for accessing Samba is plex/piplex
 
 ## Building
 
-To use this project you must first install pi-gen, available at [https://github.com/RPi-Distro/pi-gen](https://github.com/RPi-Distro/pi-gen). Start by setting up pi-gen as described and ensure you are able to successfully build the base image. Once complete, clone this repository into where you cloned the pi-gen repository. Then, create a config file with the following in it:
+To use this project you must first install pi-gen, available at [https://github.com/RPi-Distro/pi-gen](https://github.com/RPi-Distro/pi-gen). Start by setting up pi-gen as described and ensure you are able to successfully build the base image. Once complete, clone this repository into where you cloned the pi-gen repository as "stage-piplex1" (`git clone https://github.com/dustinrue/PiPlex.git stage-piplex1`). Then, create a config file with the following in it:
 
 ```
 IMG_NAME=PiPlex
